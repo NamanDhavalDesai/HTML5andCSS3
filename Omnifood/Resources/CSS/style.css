@@ -170,6 +170,14 @@ input[type=submit]:active
     float: left;
     margin-top: 20px;
 }
+.logo-black
+{
+    height: 50px;
+    width: auto;
+    display: none;
+    float: left;
+    margin: 5px 0;
+}
 .main-nav
 {
     float: right;
@@ -533,4 +541,32 @@ footer p
 {
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
+}
+.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited
+{
+    color: #555;
+    padding: 15px 0;
+}
+.sticky .logo-black
+{
+    display: block;
+}
+.sticky .logo
+{
+    display: none;
+}
+.sticky .main-nav
+{
+    margin-top: 21px;
 }
